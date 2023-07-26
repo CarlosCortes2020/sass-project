@@ -1,13 +1,13 @@
 $primary-color:#560764;
 $secondary-color: #913175;
-$terciary-color: #DD5B82;
-$primary-text-color: #FE9797;
+$terciary-color: #FE9797;
+$primary-text-color:  #DD5B82;
 
 $font-stack: 'IBM Plex Sans', sans-serif;
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 .navbar {
@@ -15,12 +15,19 @@ body {
     width: 100%;
     height: 50px;   
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-between;    
 }
 
+.navbar p {
+    margin-left: 10px;
+    color: $primary-text-color;
+    font-family: $font-stack;
+}
+ 
 .icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-right: 5px;
 }
 
 .icon-butt {
@@ -31,10 +38,50 @@ body {
 .main-section {
     background-color: $terciary-color;
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
+.info-section-title {
+    font-family: $font-stack;
+    margin: 0;
+    padding: 15px 10px 10px 10px;
+    color: $secondary-color;
+}
+
+.info-section-text {
+    font-family: $font-stack;
+    padding: 0 10px 10px 10px;
+    color: $secondary-color;
+}
+
+.info-section-button {
+    font-family: $font-stack;
+    margin: 0 20px 20px 20px;
+    padding: 5px;
+    border-radius: 20px;
+    border-style: none;
+    width: 120px;
+    height: 35px;
+    background-color: #560764;
+    color: whitesmoke;
+}
+
+.image-section {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}
+.image-section img {
+    width: 100%;
+}
+
+.healthcare {
+    font-family: $font-stack;
+}
+
+
 footer {
+    font-family: $font-stack;
     background-color: $primary-color;
     width: 100%;
     height: 50px;
