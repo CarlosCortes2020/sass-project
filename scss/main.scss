@@ -5,84 +5,148 @@ $primary-text-color:  #DD5B82;
 
 $font-stack: 'IBM Plex Sans', sans-serif;
 
-body {
+body{
     margin: 0px;
     padding: 0px;
+    font-family: $font-stack;
 }
 
-.navbar {
+.navbar{
     background-color: $primary-color;
     width: 100%;
     height: 50px;   
     display: flex;
     justify-content: space-between;    
+    p{
+        margin-left: 10px;
+        color: $primary-text-color;
+    }
+    .icons{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5px;
+    }
+    .icon-butt{
+        background-color: transparent;
+        border-style: none;
+        color: $primary-text-color;
+    }
 }
 
-.navbar p {
-    margin-left: 10px;
-    color: $primary-text-color;
-    font-family: $font-stack;
-}
- 
-.icons {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 5px;
-}
 
-.icon-butt {
-    background-color: transparent;
-    border-style: none;
-    color: $primary-text-color;
-}
-.main-section {
+.main-section{
     background-color: $terciary-color;
     width: 100%;
-    height: auto;
+    height: auto;    
+    article{
+        .info-section{
+            .info-section-title{
+                margin: 0;
+                padding: 15px 10px 10px 10px;
+                color: $secondary-color;
+            }    
+            .info-section-text{
+                padding: 0 10px 10px 10px;
+                color: $secondary-color;
+            }    
+            .info-section-button{
+                margin: 0 20px 20px 20px;
+                padding: 5px;
+                border-radius: 20px;
+                border-style: none;
+                width: 120px;
+                height: 35px;
+                background-color: #560764;
+                color: $primary-text-color;
+            }
+        }
+    
+        .image-section{
+            margin: auto;
+            width: 300px;
+            height: 300px;    
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .product-section{
+        color: $secondary-color;
+        .healthcare{
+            h2{
+
+            }
+        }
+        .furniture{
+            h2{
+
+            }
+        }
+    }
+    .about-section{
+        color: $secondary-color;        
+        .why-us{
+            h2{
+                margin: 10px;
+            }
+            div{
+                flex-wrap: wrap;
+                display: flex;
+                gap: 5px;
+                .earth{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    i{
+                        margin: 5px;
+                        padding: 20px;
+                    }
+                    p{
+                        margin: 5px;
+                    }
+                }
+                .innovation{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    i{
+
+                    }
+                    p{
+
+                    }
+                }
+            }
+        }
+        .gallery{
+            h2{
+
+            }
+        }
+        .location{
+            h2{
+
+            }   
+            div{
+
+            }   
+            p{
+
+            }      
+        }
+    }
 }
 
-.info-section-title {
-    font-family: $font-stack;
-    margin: 0;
-    padding: 15px 10px 10px 10px;
-    color: $secondary-color;
-}
 
-.info-section-text {
-    font-family: $font-stack;
-    padding: 0 10px 10px 10px;
-    color: $secondary-color;
-}
-
-.info-section-button {
-    font-family: $font-stack;
-    margin: 0 20px 20px 20px;
-    padding: 5px;
-    border-radius: 20px;
-    border-style: none;
-    width: 120px;
-    height: 35px;
-    background-color: #560764;
-    color: whitesmoke;
-}
-
-.image-section {
-    margin: auto;
-    width: 300px;
-    height: 300px;
-}
-.image-section img {
-    width: 100%;
-}
-
-.healthcare {
-    font-family: $font-stack;
-}
-
-
-footer {
-    font-family: $font-stack;
+footer{
+    color: $primary-text-color; 
     background-color: $primary-color;
     width: 100%;
-    height: 50px;
+    height: auto;    
+    h3{
+        p{
+
+        }
+    }
 }
