@@ -2,6 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "IBM Plex Sans", sans-serif;
+  background-color: #FE9797;
 }
 
 .navbar {
@@ -10,6 +11,7 @@ body {
   height: 50px;
   display: flex;
   justify-content: space-between;
+  position: fixed;
 }
 .navbar p {
   margin-left: 10px;
@@ -31,6 +33,10 @@ body {
   width: 100%;
   height: auto;
 }
+.main-section article {
+  display: flex;
+  flex-direction: column-reverse;
+}
 .main-section article .info-section .info-section-title {
   margin: 0;
   padding: 15px 10px 10px 10px;
@@ -51,7 +57,7 @@ body {
   color: #DD5B82;
 }
 .main-section article .image-section {
-  margin: auto;
+  margin: 60px 10px 10px 10px;
   width: 300px;
   height: 300px;
 }
@@ -89,9 +95,49 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.main-section .about-section .why-us div .innovation i {
+  margin: 5px;
+  padding: 20px;
+}
+.main-section .about-section .why-us div .innovation p {
+  margin: 5px;
+}
 footer {
   color: #DD5B82;
   background-color: #560764;
   width: 100%;
   height: auto;
+}
+/*Responsive section*/
+@media (min-width: 768px) {
+  .main-section {
+    width: 768px;
+    height: 100vh;
+    margin: auto;
+  }
+  .main-section article {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .main-section article .info-section {
+    width: 50%;
+  }
+  .main-section article .info-section .info-section-title {
+    margin-top: 50px;
+  }
+  .main-section article .image-section {
+    height: 50%;
+  }
+  .main-section .about-section .why-us div {
+    flex-wrap: nowrap;
+    gap: 5px;
+    margin: 10px 5px;
+  }
+  .main-section .about-section .why-us div .earth {
+    flex-direction: row;
+  }
+  .main-section .about-section .why-us div .innovation {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=main.css.map */
