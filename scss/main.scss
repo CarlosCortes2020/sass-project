@@ -5,6 +5,39 @@ $primary-text-color:  #DD5B82;
 
 $font-stack: 'IBM Plex Sans', sans-serif;
 
+@mixin background-card($color-backg) {
+    width: 200px;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+    background-color: $color-backg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin image-card($img-url) {
+    margin: 10px 0;
+    width: 90%;
+    height: 200px;
+    background-image: $img-url;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+@mixin text-card($text-color) {
+    background-color: transparent;
+    color: $text-color;
+    h3{
+        margin: 15px;
+    }
+    p{
+        margin: 0 15px 15px 15px;
+    }
+}
+
 body{
     margin: 0px;
     padding: 0px;
@@ -78,12 +111,30 @@ body{
         color: $secondary-color;
         .healthcare{
             h2{
-
+                margin: 20px 10px;
+            }
+            .product-card{
+                @include background-card($secondary-color);                
+                .product-card-image{
+                    text-align: center;
+                    @include image-card(url(../img/teaching_classroom.jpg));
+                 }
+                .product-card-text{
+                    @include text-card($terciary-color);
+                }
             }
         }
         .furniture{
-            h2{
-
+            @extend .healthcare;
+            .product-card{
+                @include background-card($primary-text-color);                
+                .product-card-image{
+                    text-align: center;
+                    @include image-card(url(../img/teaching_classroom.jpg));
+                 }
+                .product-card-text{
+                    @include text-card($primary-color);
+                }
             }
         }
     }
@@ -91,7 +142,7 @@ body{
         color: $secondary-color;        
         .why-us{
             h2{
-                margin: 10px;
+                margin: 20px 10px;
             }
             div{
                 flex-wrap: wrap;
@@ -103,11 +154,11 @@ body{
                     align-items: center;
 
                     i{
-                        margin: 5px;
+                        margin: 10px;
                         padding: 20px;
                     }
                     p{
-                        margin: 5px;
+                        margin: 10px;
                     }
                 }
                 .innovation{
@@ -116,23 +167,23 @@ body{
                     align-items: center;
 
                     i{
-                        margin: 5px;
+                        margin: 10px;
                         padding: 20px;
                     }
                     p{
-                        margin: 5px;
+                        margin: 10px;
                     }
                 }
             }
         }
         .gallery{
             h2{
-
+                margin: 20px 10px;
             }
         }
         .location{
             h2{
-
+                margin: 20px 10px;
             }   
             div{
 
@@ -151,6 +202,7 @@ footer{
     width: 100%;
     height: auto;    
     h3{
+        margin: 20px 10px;        
         p{
 
         }
