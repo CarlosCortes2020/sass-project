@@ -76,10 +76,11 @@ body{
     article{
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
         .info-section{
             .info-section-title{
                 margin: 0;
-                padding: 15px 10px 10px 10px;
+                padding: 20px 10px 10px 10px;
                 color: $secondary-color;
             }    
             .info-section-text{
@@ -111,44 +112,105 @@ body{
         color: $secondary-color;
         .healthcare{
             h2{
-                margin: 20px 10px;
+                margin: 50px 10px 20px 10px;
             }
-            .product-card{
-                @include background-card($secondary-color);                
-                .product-card-image{
-                    text-align: center;
-                    @include image-card(url(../img/teaching_classroom.jpg));
-                 }
-                .product-card-text{
-                    @include text-card($terciary-color);
+            .product-card-container{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                .product-card{
+                    @include background-card($secondary-color);                
+                    .product-card-image{
+                        text-align: center;
+                        @include image-card(url(../img/bobbin-5312807_640.jpg));
+                    }
+                    .product-card-text{
+                        @include text-card($terciary-color);
+                    }
+                }
+                .product-card{
+                    .product-card-image-2{
+                        @include image-card(url(../img/button-3531014_640.jpg));
+                    }
+                }
+                .product-card{
+                    .product-card-image-3{
+                        @include image-card(url(../img/buttons-6980831_640.jpg));
+                    }
+                }
+                .product-card{
+                    .product-card-image-4{
+                        @include image-card(url(../img/crafts-56983_640.jpg));
+                    }
+                }
+                .product-card{
+                    .product-card-image-5{
+                        @include image-card(url(../img/decoration-3312556_640.jpg));
+                    }
+                }
+                .product-card{
+                    .product-card-image-6{
+                        @include image-card(url(../img/design-2682515_640.jpg));
+                    }
                 }
             }
         }
         .furniture{
             @extend .healthcare;
-            .product-card{
-                @include background-card($primary-text-color);                
-                .product-card-image{
-                    text-align: center;
-                    @include image-card(url(../img/teaching_classroom.jpg));
-                 }
-                .product-card-text{
-                    @include text-card($primary-color);
+            h2{
+                margin: 50px 10px 20px 10px;
+            }
+            .product-card-container{
+                .product-card{
+                    @include background-card($primary-text-color);                
+                    .product-card-image{
+                        text-align: center;
+                        @include image-card(url(../img/dog-77424_640.jpg));
+                    }
+                    .product-card-text{
+                        @include text-card($primary-color);
+                    }
+                }
+                .product-card{
+                    .product-card-image-2{
+                        @include image-card(url(../img/knitting-2225184_640.jpg));
+                    }
+                }
+                .product-card{
+                    .product-card-image-3{
+                        @include image-card(url(../img/pinning-630911_640.jpg));
+                    }
+                }
+                .product-card{
+                    .product-card-image-4{
+                        @include image-card(url(../img/sewing-1229708_640.jpg));
+                    }
+                }
+                .product-card{
+                    .product-card-image-5{
+                        @include image-card(url(../img/sewing-1229710_1280.jpg));
+                    }
+                }
+                .product-card{
+                    .product-card-image-6{
+                        @include image-card(url(../img/sewing-2321532_640.jpg));
+                    }
                 }
             }
+
         }
     }
     .about-section{
         color: $secondary-color;        
         .why-us{
             h2{
-                margin: 20px 10px;
-            }
-            div{
-                flex-wrap: wrap;
+                margin: 50px 10px 20px 10px;
+            }    div{
                 display: flex;
+                flex-wrap: wrap;
                 gap: 5px;
                 .earth{
+                    margin: auto;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -158,10 +220,12 @@ body{
                         padding: 20px;
                     }
                     p{
+                        width: 150px;
                         margin: 10px;
                     }
                 }
                 .innovation{
+                    margin: auto;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -171,6 +235,7 @@ body{
                         padding: 20px;
                     }
                     p{
+                        width: 150px;
                         margin: 10px;
                     }
                 }
@@ -178,7 +243,25 @@ body{
         }
         .gallery{
             h2{
-                margin: 20px 10px;
+                margin: 50px 10px 20px 10px;
+            }
+            .gallery-container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 5px;
+                .gallery-img-1{
+                    @include image-card(url(../img/spools-of-thread-5312806_640.jpg));
+                    width: 200px;
+                }
+                .gallery-img-2{
+                    @include image-card(url(../img/stars-5643452_640.jpg));                    
+                    width: 200px;
+                }
+                .gallery-img-3{
+                    @include image-card(url(../img/tailoring-4184683_640.jpg));                    
+                    width: 200px;
+                }
             }
         }
         .location{
@@ -186,11 +269,17 @@ body{
                 margin: 20px 10px;
             }   
             div{
+                display: flex;
+                flex-wrap: wrap;
 
+                img{
+                    width: 90%;
+                    margin: auto;
+                }
             }   
             p{
-
-            }      
+                font-weight:bold;
+            } 
         }
     }
 }

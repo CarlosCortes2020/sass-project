@@ -36,10 +36,11 @@ body {
 .main-section article {
   display: flex;
   flex-direction: column-reverse;
+  align-items: center;
 }
 .main-section article .info-section .info-section-title {
   margin: 0;
-  padding: 15px 10px 10px 10px;
+  padding: 20px 10px 10px 10px;
   color: #913175;
 }
 .main-section article .info-section .info-section-text {
@@ -68,9 +69,14 @@ body {
   color: #913175;
 }
 .main-section .product-section .healthcare h2, .main-section .product-section .furniture h2 {
-  margin: 20px 10px;
+  margin: 50px 10px 20px 10px;
 }
-.main-section .product-section .healthcare .product-card, .main-section .product-section .furniture .product-card {
+.main-section .product-section .healthcare .product-card-container, .main-section .product-section .furniture .product-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.main-section .product-section .healthcare .product-card-container .product-card, .main-section .product-section .furniture .product-card-container .product-card {
   width: 200px;
   height: auto;
   margin: auto;
@@ -80,28 +86,81 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.main-section .product-section .healthcare .product-card .product-card-image, .main-section .product-section .furniture .product-card .product-card-image {
+.main-section .product-section .healthcare .product-card-container .product-card .product-card-image, .main-section .product-section .furniture .product-card-container .product-card .product-card-image {
   text-align: center;
   margin: 10px 0;
   width: 90%;
   height: 200px;
-  background-image: url(../img/teaching_classroom.jpg);
+  background-image: url(../img/bobbin-5312807_640.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
 }
-.main-section .product-section .healthcare .product-card .product-card-text, .main-section .product-section .furniture .product-card .product-card-text {
+.main-section .product-section .healthcare .product-card-container .product-card .product-card-text, .main-section .product-section .furniture .product-card-container .product-card .product-card-text {
   background-color: transparent;
   color: #FE9797;
 }
-.main-section .product-section .healthcare .product-card .product-card-text h3, .main-section .product-section .furniture .product-card .product-card-text h3 {
+.main-section .product-section .healthcare .product-card-container .product-card .product-card-text h3, .main-section .product-section .furniture .product-card-container .product-card .product-card-text h3 {
   margin: 15px;
 }
-.main-section .product-section .healthcare .product-card .product-card-text p, .main-section .product-section .furniture .product-card .product-card-text p {
+.main-section .product-section .healthcare .product-card-container .product-card .product-card-text p, .main-section .product-section .furniture .product-card-container .product-card .product-card-text p {
   margin: 0 15px 15px 15px;
 }
-.main-section .product-section .furniture .product-card {
+.main-section .product-section .healthcare .product-card-container .product-card .product-card-image-2, .main-section .product-section .furniture .product-card-container .product-card .product-card-image-2 {
+  margin: 10px 0;
+  width: 90%;
+  height: 200px;
+  background-image: url(../img/button-3531014_640.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.main-section .product-section .healthcare .product-card-container .product-card .product-card-image-3, .main-section .product-section .furniture .product-card-container .product-card .product-card-image-3 {
+  margin: 10px 0;
+  width: 90%;
+  height: 200px;
+  background-image: url(../img/buttons-6980831_640.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.main-section .product-section .healthcare .product-card-container .product-card .product-card-image-4, .main-section .product-section .furniture .product-card-container .product-card .product-card-image-4 {
+  margin: 10px 0;
+  width: 90%;
+  height: 200px;
+  background-image: url(../img/crafts-56983_640.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.main-section .product-section .healthcare .product-card-container .product-card .product-card-image-5, .main-section .product-section .furniture .product-card-container .product-card .product-card-image-5 {
+  margin: 10px 0;
+  width: 90%;
+  height: 200px;
+  background-image: url(../img/decoration-3312556_640.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.main-section .product-section .healthcare .product-card-container .product-card .product-card-image-6, .main-section .product-section .furniture .product-card-container .product-card .product-card-image-6 {
+  margin: 10px 0;
+  width: 90%;
+  height: 200px;
+  background-image: url(../img/design-2682515_640.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.main-section .product-section .furniture h2 {
+  margin: 50px 10px 20px 10px;
+}
+.main-section .product-section .furniture .product-card-container .product-card {
   width: 200px;
   height: auto;
   margin: auto;
@@ -111,39 +170,90 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.main-section .product-section .furniture .product-card .product-card-image {
+.main-section .product-section .furniture .product-card-container .product-card .product-card-image {
   text-align: center;
   margin: 10px 0;
   width: 90%;
   height: 200px;
-  background-image: url(../img/teaching_classroom.jpg);
+  background-image: url(../img/dog-77424_640.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
 }
-.main-section .product-section .furniture .product-card .product-card-text {
+.main-section .product-section .furniture .product-card-container .product-card .product-card-text {
   background-color: transparent;
   color: #560764;
 }
-.main-section .product-section .furniture .product-card .product-card-text h3 {
+.main-section .product-section .furniture .product-card-container .product-card .product-card-text h3 {
   margin: 15px;
 }
-.main-section .product-section .furniture .product-card .product-card-text p {
+.main-section .product-section .furniture .product-card-container .product-card .product-card-text p {
   margin: 0 15px 15px 15px;
+}
+.main-section .product-section .furniture .product-card-container .product-card .product-card-image-2 {
+  margin: 10px 0;
+  width: 90%;
+  height: 200px;
+  background-image: url(../img/knitting-2225184_640.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.main-section .product-section .furniture .product-card-container .product-card .product-card-image-3 {
+  margin: 10px 0;
+  width: 90%;
+  height: 200px;
+  background-image: url(../img/pinning-630911_640.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.main-section .product-section .furniture .product-card-container .product-card .product-card-image-4 {
+  margin: 10px 0;
+  width: 90%;
+  height: 200px;
+  background-image: url(../img/sewing-1229708_640.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.main-section .product-section .furniture .product-card-container .product-card .product-card-image-5 {
+  margin: 10px 0;
+  width: 90%;
+  height: 200px;
+  background-image: url(../img/sewing-1229710_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.main-section .product-section .furniture .product-card-container .product-card .product-card-image-6 {
+  margin: 10px 0;
+  width: 90%;
+  height: 200px;
+  background-image: url(../img/sewing-2321532_640.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
 }
 .main-section .about-section {
   color: #913175;
 }
 .main-section .about-section .why-us h2 {
-  margin: 20px 10px;
+  margin: 50px 10px 20px 10px;
 }
 .main-section .about-section .why-us div {
-  flex-wrap: wrap;
   display: flex;
+  flex-wrap: wrap;
   gap: 5px;
 }
 .main-section .about-section .why-us div .earth {
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,9 +263,11 @@ body {
   padding: 20px;
 }
 .main-section .about-section .why-us div .earth p {
+  width: 150px;
   margin: 10px;
 }
 .main-section .about-section .why-us div .innovation {
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,14 +277,66 @@ body {
   padding: 20px;
 }
 .main-section .about-section .why-us div .innovation p {
+  width: 150px;
   margin: 10px;
 }
 .main-section .about-section .gallery h2 {
-  margin: 20px 10px;
+  margin: 50px 10px 20px 10px;
+}
+.main-section .about-section .gallery .gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+.main-section .about-section .gallery .gallery-container .gallery-img-1 {
+  margin: 10px 0;
+  width: 90%;
+  height: 200px;
+  background-image: url(../img/spools-of-thread-5312806_640.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 200px;
+}
+.main-section .about-section .gallery .gallery-container .gallery-img-2 {
+  margin: 10px 0;
+  width: 90%;
+  height: 200px;
+  background-image: url(../img/stars-5643452_640.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 200px;
+}
+.main-section .about-section .gallery .gallery-container .gallery-img-3 {
+  margin: 10px 0;
+  width: 90%;
+  height: 200px;
+  background-image: url(../img/tailoring-4184683_640.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 200px;
 }
 .main-section .about-section .location h2 {
   margin: 20px 10px;
 }
+.main-section .about-section .location div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-section .about-section .location div img {
+  width: 90%;
+  margin: auto;
+}
+.main-section .about-section .location p {
+  font-weight: bold;
+}
+
 footer {
   color: #DD5B82;
   background-color: #560764;
